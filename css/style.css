@@ -1,0 +1,161 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-size: cover;
+    background-image: url("../images/bg-desktop.svg");
+  
+    height: 100vh;
+    background-color:hsl(257, 40%, 49%) ;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+
+/* medium */
+@media (min-width:992px){
+    .container{
+        width: 978px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+
+
+.main .nav .logo{
+    padding: 30px;
+    margin-bottom: 40px;
+    
+}
+
+@media (max-width:991px){
+    .main .nav .logo{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.container{
+    display: flex;
+}
+
+@media (max-width:991px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.main .text{
+    color: white;
+    margin-left: 50px;
+}
+
+
+
+@media (max-width:991px){
+    .main .text{
+        text-align: center;
+    }
+}
+
+@media (max-width:767px){
+    .main .text{
+        text-align: center;
+        margin-right: 50px;
+        width: 350px;
+        margin-top: 40px;
+        overflow-x: hidden;
+    }
+}
+
+.main .sec-image img{
+    width: 700px;
+}
+
+@media (max-width:992px){
+    .main .sec-image img{
+        max-width: 330px;
+        overflow-x: hidden;
+    }
+
+  
+}
+
+
+.main .text h1{
+    line-height: 1.5;
+}
+
+
+.main .text p{
+    font-weight: light;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.704);
+    width: 100%;
+
+}
+
+.main .text button{
+    border-radius: 25px;
+    padding: 15px;
+    width: 300px;
+    border: none;
+    font-size: 20px;
+    
+    margin-bottom: 70px;
+    background: hsl(0, 0%, 100%);
+}
+
+.main .text button:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.social{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.social i{
+    width: 50px;
+    height: 50px;
+    padding-left: 1px;
+    padding-top: 11px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width:992px){
+    .social {
+       bottom: -120px; 
+    }
+}
